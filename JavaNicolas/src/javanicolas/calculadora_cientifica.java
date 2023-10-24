@@ -10,11 +10,12 @@ package javanicolas;
  */
 public class calculadora_cientifica extends javax.swing.JFrame {
 
-    /**
-     * Creates new form calculadora_cientifica
-     */
+    int num1;
+    int num2;
+    public String operador;
     public calculadora_cientifica() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -270,7 +271,9 @@ public class calculadora_cientifica extends javax.swing.JFrame {
     }//GEN-LAST:event_BOTON_DIVIDIRActionPerformed
 
     private void BOTON_SUMAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BOTON_SUMAActionPerformed
-        jTextField1.setText(jTextField1.getText()+"+");
+        this.num1=Integer.parseInt(this.jTextField1.getText());
+        this.operador="+";
+        this.jTextField1.setText("");
     }//GEN-LAST:event_BOTON_SUMAActionPerformed
 
     private void BOTON_RESTAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BOTON_RESTAActionPerformed
